@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.bible-study {
+    .orange-text {
+        color: $orange-color;
+        font-weight: bold;
+        font-family: $font-primary;
+        font-size: 32px;
+        line-height: 40px;
+        margin: .5em 0;
+    }
+
+    .event-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        margin: 2em 0;
+    }
+}

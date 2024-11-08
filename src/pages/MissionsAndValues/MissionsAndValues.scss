@@ -1,0 +1,30 @@
+.missions-and-values {
+
+    .paragraph {
+        margin: 1em 0; 
+    }
+
+    .space-top {
+        margin-top: 1em;
+    }
+
+    .special-list {
+        list-style-type: none; /* Removes default numbering with periods */
+        counter-reset: item; /* Initialize counter */
+        padding-left: 1.5rem; /* Add indentation if needed */
+    }
+    
+    .special-list li {
+        counter-increment: item; /* Increment counter for each list item */
+        position: relative;
+        padding-left: 1.5rem; /* Space for custom number */
+    }
+    
+    .special-list li::before {
+        content: counter(item) " -"; /* Display number without a period, followed by a dash */
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        color: #365E79; /* Customize color if needed */
+    }
+}

@@ -1,0 +1,11 @@
+.stream-online {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .social-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}

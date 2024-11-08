@@ -1,0 +1,10 @@
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .icon-image {
+        justify-self: flex-end;
+        height: 100%;
+    }
+}

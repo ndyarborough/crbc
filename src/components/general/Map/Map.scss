@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+
+.map {
+    width: 100%;
+    height: 60vh;
+    border: $black-border;
+    border-radius: $border-radius;
+    overflow: hidden;
+    .map-banner {
+        background-color: $blue-color;
+        display: flex;
+
+       
+        h3 {
+            color: $secondary-color;
+            text-align: center;
+            padding: 1em;
+        }
+    }
+    .map-container {
+        position: relative;
+        flex: 1;
+        height: 100%;
+        width: 100%;
+
+        .google-map {
+            height: 100%;
+            width: 100%;
+
+            .home-pin {
+                position: absolute;
+                top: 40%;
+                left: 37%;
+            }
+ 
+            .get-directions {
+                color: white;
+                margin-right: 1em;
+            }
+        }
+    }
+}

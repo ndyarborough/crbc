@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: $secondary-color;
+    font-family: $font-primary;
+    position: relative;
+
+    .event-card-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+        padding: 0 1em;
+    }
+
+    .event-card-title {
+        margin: 1rem 0 0.5rem;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .paragraph {
+        margin: 1em 0;
+    }
+
+    .event-card-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+        background-color: $gray-color;
+        border-radius: 0 0 8px 8px;
+        font-size: 1rem;
+        color: $secondary-color;
+        font-family: $font-secondary;
+    }
+}

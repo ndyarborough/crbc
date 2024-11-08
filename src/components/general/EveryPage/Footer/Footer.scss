@@ -1,0 +1,48 @@
+@import '../../../../styles/variables';
+
+.footer {
+    background-color: $gray-color;
+    display: flex;
+    flex-direction: column;
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 2em 0;
+
+        .social-links {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            justify-content: center;
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+            gap: 1em;
+            li {
+                color: $secondary-color;
+                font-family: $font-primary;
+                font-weight: 300;
+                font-size: 22px;
+    
+            }
+        }
+    }
+
+    .footer-logo {
+        align-self: flex-end;
+        height: 100%;
+
+        .icon {
+            height: 100%;
+            .icon-image {
+                height: 100%;
+            }
+        }
+    }
+}

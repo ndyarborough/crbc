@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+
+    .info-card-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .info-card-title {
+        margin: 1rem 0 0.5rem;
+        font-family: $font-primary;
+        font-size: 1.2rem;
+        color: #333;
+    }
+}

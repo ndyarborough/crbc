@@ -1,0 +1,20 @@
+.mission-section {
+    padding: 2em 0;
+    border-bottom: 2px solid #FF6600;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .mission-points-list {
+        margin-top: 1rem;
+        padding-left: 1.5rem; // Indent for ordered list
+        list-style-type: decimal; // Numbering style
+
+        .mission-point {
+            margin-bottom: 0.5rem;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            color: #333;
+        }
+    }
+}

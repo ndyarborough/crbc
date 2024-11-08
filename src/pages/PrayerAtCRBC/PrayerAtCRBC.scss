@@ -1,0 +1,43 @@
+.prayer-at-crbc {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .center {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .download-container {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        .paragraph {
+            margin: 1em 0;
+        }
+
+        .prayer-form {
+            
+            .radio-button-container {
+                margin-bottom: 3em;
+                .radio-button {
+                    margin: 1em 0;
+                }
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+            }
+        }
+    }
+}

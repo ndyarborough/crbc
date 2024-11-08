@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+.input {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: $border-radius; // Assuming you have this variable in your SCSS
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: $font-primary;  // Assuming you have a font variable defined
+
+    &:focus {
+        border-color: #365E79;  // Change to your preferred focus color
+        outline: none;
+    }
+}
+
+textarea {
+    resize: vertical;  // Allows vertical resizing
+    min-height: 100px;  // Set a minimum height for the textarea
+}

@@ -1,0 +1,18 @@
+.newsletter-form {
+    .space {
+        margin: 2em 0;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .form-group-vertical {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 1em 0;
+    }    
+}

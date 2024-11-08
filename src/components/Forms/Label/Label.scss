@@ -1,0 +1,8 @@
+@import '../../../styles/variables';
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;  // Add space between label and input
+    font-family: $font-primary;  // Assuming you have a primary font variable
+    align-self: flex-start;
+}

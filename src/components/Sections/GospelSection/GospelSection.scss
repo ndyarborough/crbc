@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.gospel-section {
+    border-bottom: $orange-color 2px solid;
+    padding: 2em 0;
+
+    .paragraph {
+        margin: 1em 0;
+    }
+}

@@ -1,0 +1,9 @@
+.radio-button {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+
+    input {
+        width: 1em;
+    }
+}
