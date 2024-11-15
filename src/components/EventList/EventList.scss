@@ -1,0 +1,72 @@
+@import '../../styles/variables';
+
+.event-list {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.event-items {
+    width: 70%;
+}
+
+.event-item {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: $spacing-unit
+  }
+  
+  .event-date {
+    text-align: right;
+    color: $blue-color;
+    width: 30%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    padding-right: 1em;
+    border-right: 5px solid orange;
+  }
+  
+  .event-day, .event-date-number {
+    font-weight: bold;
+    font-family: $font-secondary;
+    line-height: 20px;
+    font-size: 16px;
+  }
+  
+  
+  .event-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.event-title {
+    font-weight: bold;
+    font-family: $font-primary;
+    font-size: 24px;
+    color: $gray-color;
+}
+
+.event-description {
+    color: $blue-color;
+    font-family: $font-primary;
+    font-size: 12px;
+    margin: 1em 0;
+    word-wrap: break-word;
+
+}
+
+.event-time-location {
+    font-weight: bold;
+    color: $gray-color;
+    text-align: right;
+}
+

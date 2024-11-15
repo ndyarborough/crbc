@@ -32,7 +32,7 @@ function App() {
           <div className='main-content'>
             <Routes>
               {/* Define routes here */}
-              <Route path="/" element={<Home />} />
+              <Route path="/crbc" element={<Home />} />
               <Route path="/whattoexpect" element={<WhatToExpect />} />
               <Route path="/biblestudy" element={<BibleStudy />} />
               <Route path="/contact" element={<Contact />} />

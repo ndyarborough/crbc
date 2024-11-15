@@ -5,7 +5,7 @@ import Ministries2 from '../../assets/imgs/ministries2.png';
 import Ministries3 from '../../assets/imgs/ministries3.png';
 import Ministries4 from '../../assets/imgs/ministries4.png';
 import SectionHeader from '../../components/general/SectionHeader';
-
+ 
 function Ministries() {
     return (
         <div className='ministries'>

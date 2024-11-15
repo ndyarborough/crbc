@@ -14,16 +14,16 @@ function Home() {
             <Icon iconSrc={HomeLogo} altText='CRBC Logo' />
 
             <div className='buttons-container'>
-                <Link to='eventdashboard'>
+                <Link to='/eventdashboard'>
                     <Button textColor="#fff" backgroundColor="#365E79" borderColor="#fff" text='EVENT DASHBOARD'></Button>
                 </Link>
-                <Link to='streamonline'>
+                <Link to='/streamonline'>
                     <Button textColor="#000" backgroundColor="#fff" borderColor="#000" text='STREAM ONLINE'></Button>
                 </Link>
-                <Link to='missionsandvalues'>
+                <Link to='/missionsandvalues'>
                     <Button textColor="#fff" backgroundColor="#365E79" borderColor="#fff" text='MISSIONS AND VALUES'> </Button>
                 </Link>
-                <Link to='givingoptions'>
+                <Link to='/givingoptions'>
                     <Button textColor="#000" backgroundColor="#fff" borderColor="#000" text='GIVE ONLINE'></Button>
                 </Link>
             </div>

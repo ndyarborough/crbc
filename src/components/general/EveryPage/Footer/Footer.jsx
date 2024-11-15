@@ -10,8 +10,12 @@ function Footer() {
         <div className='footer'>
             <div className='column'>
                 <div className='social-links'>
-                    <Icon iconSrc={Facebook} altText='Facebook Icon' />
-                    <Icon iconSrc={Youtube} altText='Youtube Icon' />
+                    <Link target='_blank' to='https://www.facebook.com/crbcraleigh/'>
+                        <Icon iconSrc={Facebook} altText='Facebook Icon' />
+                    </Link>
+                    <Link target='_blank' to='https://www.youtube.com/user/CreedmoorRoadBaptist'>
+                        <Icon iconSrc={Youtube} altText='Youtube Icon' />
+                    </Link>
                 </div>
                 <ul>
                     <Link to='meetthepastor'>
@@ -25,7 +29,9 @@ function Footer() {
                     </Link>
                 </ul>
             </div>
-            <Icon iconSrc={FooterLogo} altText='Footer Logo' />
+            <Link to='/crbc '>
+                <Icon iconSrc={FooterLogo} altText='Footer Logo' />
+            </Link>
         </div>
     );
 }

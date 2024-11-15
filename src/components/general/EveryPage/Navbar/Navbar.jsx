@@ -24,7 +24,7 @@ function Navbar() {
                     style={{ cursor: 'pointer' }} // Add cursor pointer for clickable feedback
                 />
 
-                <Link to='/'>
+                <Link to='/crbc'>
                     <Icon iconSrc={NavLogo} altText='CRBC Logo' />
                 </Link>
 
@@ -35,7 +35,7 @@ function Navbar() {
             {/* Sliding Menu */}
             <div className={`slide-menu ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+                    <li><Link to="/crbc" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
                     <li><Link to="/whattoexpect" onClick={() => setIsMenuOpen(false)}>What To Expect</Link></li>
                     <li><Link to="/biblestudy" onClick={() => setIsMenuOpen(false)}>Bible Study</Link></li>
                     <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link></li>

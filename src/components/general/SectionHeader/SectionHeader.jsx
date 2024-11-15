@@ -1,9 +1,9 @@
 import React from 'react';
 import './SectionHeader.scss';
 
-function SectionHeader({ text }) {
+function SectionHeader({ text, className }) {
     return (
-        <h2 className='section-header'>{text}</h2>
+        <h2 className={`section-header ${className}`}>{text}</h2>
     );
 }
 

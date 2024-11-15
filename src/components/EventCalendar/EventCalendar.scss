@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+
+/* Calendar styling */
+.react-calendar {
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+  border-radius: 50%;
+  overflow: visible !important;
+  position: relative; /* Allows positioning of the event count badge */
+
+  /* Event count badge styling */
+  .event-count {
+    position: absolute;
+    top: 0; /* Adjusted to move the badge inward */
+    right: 0; /* Adjusted to move the badge inward */
+    background-color: $orange-color; /* Yellow color */
+    color: white;
+    font-size: 0.65em;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    pointer-events: none; /* Prevents interference with clicking */
+  }
+
+  /* Ensures date number is visible above the badge */
+  abbr {
+    position: relative;
+    z-index: 5;
+  }
+}
+
+/* Tile highlighting styles */
+.react-calendar__tile.highlighted {
+  background-color: $orange-color;
+  abbr {
+    color: $secondary-color;
+  }
+}
+
+.react-calendar__tile.react-calendar__tile--now {
+  background-color: $primary-color;
+  abbr {
+    color: $secondary-color;
+  }
+}
+
+/* Styling for selected date */
+.react-calendar__tile--active {
+  background-color: $blue-color;
+  color: white;
+  font-weight: bold;
+  border-radius: 50% !important;
+  abbr {
+    color: $secondary-color;
+  }
+}
+
+.react-calendar__tile--active:hover {
+  background-color: #2980b9 !important;
+}
+
+abbr {
+  color: $gray-color;
+}
+
+.active-day {
+  margin: 1em 0;
+}
