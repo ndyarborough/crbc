@@ -16,4 +16,10 @@
     textarea {
         min-height: 25vh;
     }
+
+    .error {
+        align-self: flex-start;
+        margin: 0 0 1em 0;
+        padding-left: 8px;
+    }
 }

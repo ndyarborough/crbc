@@ -14,6 +14,7 @@
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
     "@react-google-maps/api": "^2.20.3",
+    "emailjs-com": "^3.2.0",
     "hamburger-react": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
