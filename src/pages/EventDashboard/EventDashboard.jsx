@@ -37,6 +37,7 @@ function EventDashboard() {
 
       <Text
         text='Event Calendar'
+        className='title'
         color='#365E79'
         fontFamily='Krub'
         fontWeight='bold'

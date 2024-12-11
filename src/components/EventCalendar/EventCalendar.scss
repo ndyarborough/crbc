@@ -1,9 +1,23 @@
 @import '../../styles/variables';
 
 /* Calendar styling */
-.react-calendar {
-  border-radius: 10px;
+.event-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+  
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
 }
+
+
 
 .react-calendar__tile {
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -11,6 +25,15 @@
   border-radius: 50%;
   overflow: visible !important;
   position: relative; /* Allows positioning of the event count badge */
+
+  @media (min-width: 768px) {
+    padding: 30px 14px;
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 1.3rem;
+  }
 
   /* Event count badge styling */
   .event-count {
@@ -28,6 +51,14 @@
     justify-content: center;
     font-weight: bold;
     pointer-events: none; /* Prevents interference with clicking */
+
+    @media (min-width: 768px) {
+      font-size: 0.8rem;
+    }
+  
+    @media (min-width: 1200px) {
+      font-size: 1rem;
+    }
   }
 
   /* Ensures date number is visible above the badge */
@@ -72,5 +103,27 @@ abbr {
 }
 
 .active-day {
+  font-size: 1.2rem;
   margin: 1em 0;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}
+
+
+.react-calendar {
+  width: 100%;
+}
+
+.react-calendar__navigation button {
+  font-size: 2rem;
+}
+
+span.react-calendar__navigation__label__labelText {
+  font-size: 1.3rem;
 }

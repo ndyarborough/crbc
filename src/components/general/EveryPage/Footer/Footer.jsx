@@ -29,9 +29,11 @@ function Footer() {
                     </Link>
                 </ul>
             </div>
-            <Link to='/crbc '>
-                <Icon iconSrc={FooterLogo} altText='Footer Logo' />
-            </Link>
+            <div className='row3'>
+                <Link to='/crbc '>
+                    <Icon className='icon' iconSrc={FooterLogo} altText='Footer Logo' />
+                </Link>
+            </div>
         </div>
     );
 }

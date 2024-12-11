@@ -17,11 +17,11 @@
     .slide-menu {
         position: fixed;
         top: 10vh;
-        right: -250px;  // Start hidden off-screen on the right
+        right: -250px; // Start hidden off-screen on the right
         height: 90vh;
         width: 250px;
-        background-color: $secondary-color;  // Use primary color for menu background
-        color: $gray-color;          // Assuming a light text color variable
+        background-color: $secondary-color; // Use primary color for menu background
+        color: $gray-color; // Assuming a light text color variable
         transition: transform 0.3s ease;
         padding-top: 2rem;
         display: flex;
@@ -30,7 +30,7 @@
         align-items: center;
 
         &.open {
-            transform: translateX(-250px);  // Slide in by moving leftwards
+            transform: translateX(-250px); // Slide in by moving leftwards
         }
 
         ul {
@@ -54,6 +54,27 @@
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 640px) {
+
+    .navbar {
+        .row {
+            padding: 0;
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .navbar {
+        .row {
+            padding: 0;
+            width: 60%;
         }
     }
 }

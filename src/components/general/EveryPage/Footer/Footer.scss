@@ -4,7 +4,7 @@
     background-color: $gray-color;
     display: flex;
     flex-direction: column;
-    
+
     .column {
         display: flex;
         flex-direction: column;
@@ -17,14 +17,14 @@
             gap: 2em;
             justify-content: center;
         }
-    
+
         ul {
             display: flex;
             flex-direction: column;
             align-items: center;
             list-style-type: none;
             gap: 1em;
-            
+
             li {
                 color: $secondary-color;
                 font-family: $font-primary;
@@ -34,20 +34,26 @@
 
             /* Remove the default underline from links */
             a {
-                text-decoration: none;  /* Remove underline */
-                color: inherit;  /* Inherit the text color from the parent (li) */
+                text-decoration: none;
+                /* Remove underline */
+                color: inherit;
+                /* Inherit the text color from the parent (li) */
             }
         }
     }
 
-    .footer-logo {
-        align-self: flex-end;
-        height: 100%;
 
+}
+
+@media only screen and (min-width: 640px) {
+    .row3 {
+        background-color: #fff;
+
+        // background-color: $gray-color;
         .icon {
-            height: 100%;
             .icon-image {
-                height: 100%;
+                max-width: 50%;
+                align-self: center;
             }
         }
     }
