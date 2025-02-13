@@ -1,3 +1,5 @@
+@use './styles/variables' as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -29,19 +31,19 @@ html {
 }
 
 .main-content {
-  padding: 0 10% 3em 10%;
+  padding: 15vh 10% 3em 10%;
 }
 
 @media only screen and (min-width: 640px) {
   
   .main-content {
-    padding: 0 15% 3em 15%;
+    padding: 20vh 15% 3em 15%;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   
   .main-content {
-    padding: 0 30% 3em 30%;
+    padding: 15vh 30% 3em 30%;
   }
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionHeader from '../../components/general/SectionHeader';
 import './GivingOptions.scss';
 
@@ -15,7 +14,6 @@ function GivingOptions() {
                     height="600" // Adjust height as needed
                     frameBorder="0"
                     title="EasyTithe Donation"
-                    allowTransparency="true"
                 ></iframe>
             </div>
         </div>

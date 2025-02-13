@@ -1,11 +1,16 @@
-@import '../../../../styles/_variables.scss';
+@use '../../../../styles/variables' as *;
 
 .navbar {
-    padding: $spacing-unit;
+    padding: calc($spacing-unit / 2);
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    width: 100vw;
+    max-width: 100vw;
+    top: 0;
+    z-index: 1000;
 
     .row {
         display: flex;
@@ -16,18 +21,18 @@
 
     .slide-menu {
         position: fixed;
-        top: 10vh;
         right: -250px; // Start hidden off-screen on the right
-        height: 90vh;
+        top: 0;
+        height: 100vh;
         width: 250px;
-        background-color: $secondary-color; // Use primary color for menu background
-        color: $gray-color; // Assuming a light text color variable
+        color: $gray-color;
         transition: transform 0.3s ease;
-        padding-top: 2rem;
         display: flex;
         flex-direction: column;
-        z-index: 6;
+        z-index: 999;
         align-items: center;
+        background-color: $secondary-color;
+        border-left: 1px solid $primary-color;
 
         &.open {
             transform: translateX(-250px); // Slide in by moving leftwards
@@ -41,26 +46,66 @@
         }
 
         li {
-            margin: $spacing-unit / 2 0;
+            margin: calc($spacing-unit / 2) 0;
             width: 100%;
-            text-align: center;
-        }
+            text-align: left;
 
-        a {
-            color: $gray-color;
-            text-decoration: none;
-            font-size: 1.2rem;
+            .dropdown-header,
+            >a {
+                display: flex;
+                font-family: $font-secondary;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                font-weight: 500;
+                padding: calc($spacing-unit / 2);
+                text-decoration: none;
+                color: $gray-color;
 
-            &:hover {
-                text-decoration: underline;
+                .icon {
+                    width: 20%;
+
+                    .icon-image {
+                        width: 1.5em;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba($secondary-color, 10%);
+                    color: $primary-color;
+                }
+            }
+
+            .dropdown {
+                display: none; // Initially hidden
+                flex-direction: column;
+                background-color: rgba($secondary-color, 10%);
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                padding: 0;
+
+                &.open {
+                    display: flex;
+                }
+                    a {
+                        padding: calc($spacing-unit / 2);
+                        color: $gray-color;
+                        text-decoration: none;
+                        text-indent: 1em;
+                        border-bottom: 1px solid $gray-color;
+                        font-family: $font-primary;
+                        font-weight: 400;
+                        &:hover {
+                            background-color: rgba($secondary-color, 0.9);
+                            color: $primary-color;
+                        }
+                    }
             }
         }
     }
 }
 
-
 @media only screen and (min-width: 640px) {
-
     .navbar {
         .row {
             padding: 0;
@@ -70,7 +115,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-
     .navbar {
         .row {
             padding: 0;

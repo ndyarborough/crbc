@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/_variables.scss';
 
@@ -46,8 +46,6 @@ function App() {
               <Route path="/thegospel" element={<TheGospel />} />
               <Route path="/prayeratcrbc" element={<PrayerAtCRBC />} />
               <Route path="/missionsandvalues" element={<MissionsAndValues />} />
-
-
             </Routes>
           </div>
         </div>

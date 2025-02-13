@@ -1,4 +1,4 @@
-@import '../../../styles/variables';
+@use '../../../styles/variables' as *;
 
 .button {
   display: flex;
@@ -12,16 +12,17 @@
   font-weight: bold;
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
   border: 1px solid transparent;
+  transition: transform 0.3s ease, filter 0.3s ease; // Smooth hover transition
 
   &:focus {
     outline: none;
-    border-color: darken(#FF6600, 10%);
+    border-color: rgba(#FF6600, 10%);
   }
 
   &:hover {
-    background-color: darken($primary-color, 10%);
+    filter: brightness(0.7); // Darkens the button
+    transform: scale(1.05); // Scales the button slightly
   }
 
   .icon {

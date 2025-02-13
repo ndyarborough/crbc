@@ -14,6 +14,7 @@ function EventCalendar() {
     fetch('https://bpcrbcheadless.wpenginepowered.com/wp-json/tribe/events/v1/events')
       .then((response) => response.json())
       .then((data) => {
+        console.log(data)
         const events = data.events.map((event) => ({
           date: new Date(event.start_date),
           title: event.title,
@@ -22,6 +23,9 @@ function EventCalendar() {
           url: event.url,
         }));
         setEvents(events);
+        // console.log('===================');
+        // console.log(events)
+        // console.log('===================');
       })
       .catch((error) => console.error('Error fetching events:', error));
   }, []);
