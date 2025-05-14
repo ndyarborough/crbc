@@ -11,7 +11,6 @@ import GivingOptions from './pages/GivingOptions';
 import NewsletterForm from './pages/NewsletterForm';
 import MeetThePastor from './pages/MeetThePastor';
 import StreamOnline from './pages/StreamOnline';
-import SpecialEvents from './pages/SpecialEvents';
 import Ministries from './pages/Ministries';
 import TheGospel from './pages/TheGospel';
 import PrayerAtCRBC from './pages/PrayerAtCRBC';
@@ -41,7 +40,6 @@ function App() {
               <Route path="/newsletterform" element={<NewsletterForm />} />
               <Route path="/meetthepastor" element={<MeetThePastor />} />
               <Route path="/streamonline" element={<StreamOnline />} />
-              <Route path="/specialevents" element={<SpecialEvents />} />
               <Route path="/ministries" element={<Ministries />} />
               <Route path="/thegospel" element={<TheGospel />} />
               <Route path="/prayeratcrbc" element={<PrayerAtCRBC />} />

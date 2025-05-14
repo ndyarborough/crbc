@@ -8,7 +8,7 @@ function TheGospel() {
             <SectionHeader text='THE GOSPEL' />
             <GospelSection
                 title='Creation:'
-                paragraph='In the beginning God created Everything and it was perfect. There was no sickness, no disease, no sadness, and no sin. Everything lived in harmony with God.'
+                paragraph='In the beginning God created everything and it was perfect. There was no sickness, no disease, no sadness, and no sin. Everything lived in harmony with God.'
                 verses='Genesis 1:1; Psalm 90:2'
             />
 

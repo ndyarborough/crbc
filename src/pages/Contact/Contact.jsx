@@ -15,7 +15,7 @@ function Contact() {
     ];
 
     const iconList2 = [
-        { src: Pin, text: 'Address: 123 Street, City, Country' },
+        { src: Pin, text: '6001 Creedmoor Road, Raleigh, NC 27612-2208' },
     ];
 
     const handleButtonClick = () => {

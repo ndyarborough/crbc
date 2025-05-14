@@ -36,19 +36,19 @@ function PrayerForm({
       )}
       <div className="radio-button-container">
         <RadioButton
-          label="The Pastor Only"
+          label="The Pastor Only (confidential)"
           value="pastorOnly"
           checked={formData.shareWith === 'pastorOnly'}
           onChange={handleRadioChange}
         />
         <RadioButton
-          label="The Pastor & Prayer Team"
+          label="The Pastor & Prayer Team (confidential)"
           value="pastorAndTeam"
           checked={formData.shareWith === 'pastorAndTeam'}
           onChange={handleRadioChange}
         />
         <RadioButton
-          label="All Members of CRBC"
+          label="All Members of CRBC (not confidential)"
           value="allMembers"
           checked={formData.shareWith === 'allMembers'}
           onChange={handleRadioChange}

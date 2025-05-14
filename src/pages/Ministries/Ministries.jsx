@@ -34,7 +34,7 @@ function Ministries() {
             <InfoCard
                 imageSrc={Ministries4}
                 title='J.O.Y. Club'
-                description='The J.O.Y. Club (Just Older Youth or Jesus, Others, Yourself Club) is a vibrant group of mostly women, ranging from 30 to 80+, focused on sharing God’s love and spreading joy. They open meetings with prayer and song, send cards to members, and visit nursing homes and homebound members. The club also supports preschool teachers and participates in Senior Adult Rallies. Join us in keeping joy alive and sharing it with others.'
+                description='The J.O.Y. Club (Just Older Youth or Jesus, Others, Yourself) is a vibrant group of mostly women, focused on sharing God’s love and spreading joy. They open meetings with prayer and song, send cards to members, and visit nursing homes and homebound members. Join us in keeping joy alive and sharing it with others.'
             />
             </div>
         </div>

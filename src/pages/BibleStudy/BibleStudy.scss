@@ -1,6 +1,7 @@
 @use '../../styles/variables' as *;
 
 .bible-study {
+    width: 100%;
     .orange-text {
         color: $orange-color;
         font-weight: bold;
@@ -15,6 +16,8 @@
         flex-direction: column;
         gap: 3em;
         margin: 2em 0;
+        // Base styles for EventCard children (if any) would go here,
+        // but for this request, changes are only for the grid view.
     }
 }
 
@@ -22,10 +25,35 @@
     .bible-study {
         display: flex;
         flex-direction: column;
-        justify-self: center;
-        width: 50%;
+        align-items: center; 
+        width: 80%;
+        margin-left: auto;   
+        margin-right: auto;  
 
         .event-card-container {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            width: 100%; 
+            // gap: 3em; // This is inherited from the base style, adjust if needed for grid
+            // margin: 2em 0; // This is also inherited
+
+            // Styles for the EventCard component when in grid view
+            // We assume your EventCard's root element has a class 'event-card'
+            .event-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; // This will push content to top/bottom within the card
+                height: 100%; // Ensures the card takes up the full height of its grid cell, matching siblings
+
+                // If your card has specific sections like a body or footer,
+                // you might want to ensure they behave as expected.
+                // For example, if the description area should grow:
+                // .event-card-body { // Or whatever class wraps your description
+                //   flex-grow: 1;
+                // }
+                // However, justify-content: space-between on the .event-card often achieves
+                // the desired visual spacing of its direct children elements.
+            }
         }
     }
 }

@@ -44,7 +44,7 @@ function Home() {
             <div className='our-location'>
                 <SectionHeader text="OUR LOCATION" />
                 <Paragraph
-                    text='Conveniently located on Highway 50. We are a short distance from Interstates 540 and 440, and a little over a mile from Crabtree Valley Mall, making it easy to find and reach us.'
+                    text='Conveniently located on Creedmoor Road in Raleigh, NC (Hwy 50). We are a short distance from Interstates 540 and 440, and a little over a mile from Crabtree Valley Mall, making it easy to find and reach us.'
                 />
                 <Map />
             </div>

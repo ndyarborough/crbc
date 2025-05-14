@@ -3,7 +3,7 @@ import SectionHeader from '../../components/general/SectionHeader';
 import EventCard from '../../components/Cards/EventCard/EventCard';
 import BibleStudy1 from '../../assets/imgs/bible-study1.png';
 import BibleStudy2 from '../../assets/imgs/bible-study2.png';
-import BibleStudy3 from '../../assets/imgs/bible-study3.png';
+import BibleStudy0 from '../../assets/imgs/bible-study.jpg';
 
 function BibleStudy() {
     return (
@@ -21,7 +21,7 @@ function BibleStudy() {
                 <EventCard
                     imageSrc={BibleStudy2}
                     title="The Gospel Project for Kids"
-                    description='During our Sunday Service at 11am, all children are invited to "Childrens Church" to connect with their peers and learn about Christ in a fun, engaging environment.'
+                    description="During our Sunday School hour at 10am, all children are invited to Children's Church to connect with their peers and learn about Christ in a fun, engaging environment."
                     dayOfWeek="SUNDAYS"
                     time="10:00 AM"
                 />
@@ -30,9 +30,9 @@ function BibleStudy() {
 
             <div className='event-card-container'>
                 <EventCard
-                    imageSrc={BibleStudy1}
-                    title="The Bread of Life Study"
-                    description="Join us at Panera Bread for a relaxed Bible study where we dive into Scripture over a warm meal."
+                    imageSrc={BibleStudy0}
+                    title="Wednesday Night Bible Study"
+                    description="Join us Wednesday nights for Bible Study led by Pastor Danny—a time of open discussion, reflection, and fellowship as we grow in Christ together."
                     dayOfWeek="WEDNESDAYS"
                     time="6:00 PM"
                 />

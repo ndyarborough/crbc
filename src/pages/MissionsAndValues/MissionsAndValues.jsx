@@ -28,7 +28,7 @@ function MissionsAndValues() {
                     "We apply God's Word to our daily lives.",
                     "We invest in all generations to reach the next generation.",
                     "We serve our community to impact lives for the gospel.",
-                    "We pay trusting in God's power."
+                    "We pray trusting in God's power."
                 ]}
             />
 
@@ -63,7 +63,7 @@ function MissionsAndValues() {
                 />
                 <li>Be Discipled:</li>
                 <Paragraph
-                    text='We want you to come and find discipleship in one of our Sunday School classes each Sunday Morning.'
+                    text='We want you to come and find discipleship in one of our Bible Study classes each Sunday Morning.'
                 />
                 <li>Live in Community:</li>
                 <Paragraph
@@ -83,7 +83,7 @@ function MissionsAndValues() {
                 fontSize='24px'
             />
             <Paragraph 
-                text='We believe that God has a specific mission for Creedmoor Road Baptist Church, and we are most effective when we are focused on where he is leading us.' 
+                text='We believe that God has a specific mission for Creedmoor Road Baptist Church, and we are most effective when we are focused on where He is leading us.' 
             />
 
         </div>

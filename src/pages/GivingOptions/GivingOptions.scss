@@ -1,5 +1,46 @@
 .giving-options {
+    // Your existing styles for .easytithe-form-container
     .easytithe-form-container {
         padding: 3em 0;
+    }
+
+    // Styles for the new Realm giving platform section
+    .new-giving-platform-container {
+        padding: 2em 0;
+        text-align: center; // Center the button and text if desired
+
+        h2 {
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        .realm-give-now-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #007bff; // Example primary button color
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #0056b3; // Darker on hover
+            }
+        }
+        // The #realm-giving-embed-container styles were here and are now removed.
+    }
+
+    .old-giving-platform-container {
+        padding: 2em 0; // Add some padding for spacing
+        h2 {
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin-bottom: 1em;
+        }
     }
 }

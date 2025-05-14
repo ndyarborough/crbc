@@ -12,24 +12,24 @@ function Worship() {
             <SectionHeader text='What to Expect' />
             <div className='blue-text'>You are welcome here.</div>
             <Paragraph
-                text='We understand showing up at a new place for the first time can be nerve-wracking, so here’s more information about CRBC and what what you can expect.'
+                text='We understand showing up at a new place for the first time can be nerve-wracking, so here’s more information about CRBC. We meet for worship every Sunday morning at 11am. The services are one hour long or less.'
             />
 
             <div className='info-card-container'>
                 <InfoCard
                     imageSrc={Worship1}
                     title="Friendly Atmosphere"
-                    description="From the parking lot the the fellowship hall, our friendly congregation is here to guide you and answer any questions you have."
+                    description="CRBC is a small, close community of believers. Where you will feel welcome. We never single out our guests, but people will notice you and greet you with warmth and care."
                 />
                 <InfoCard
                     imageSrc={Worship2}
                     title="Engaging Worship"
-                    description="Our Music Director, Mike Gregory, brings a joyful mix of hymns, contemporary songs, and even the occasional guitar solo."
+                    description="Our Music Director, Mike Gregory, leads a joyful mix of traditional hymns, contemporary praise songs, and even the occasional guitar solo."
                 />
                 <InfoCard
                     imageSrc={Worship3}
-                    title="Community Outreach"
-                    description="Every Sunday at 11am, our lead pastor, Danny Estave, delivers insightful sermons. You can also catch the live broadcast or watch the recorded sermon on YouTube."
+                    title="A Fresh Message"
+                    description="Senior Pastor, Danny Estave, delivers insightful messages from God's word, not only explaining the meaning of the passages, but also applying their truths to our everyday lives. You can also catch the live broadcast or watch the recorded sermon on YouTube. (25-30 minutes)"
                 />
             </div>
         </div>
