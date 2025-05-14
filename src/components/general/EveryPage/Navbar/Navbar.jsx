@@ -65,9 +65,6 @@ function Navbar() {
                 <Link to="/biblestudy">Bible Study</Link>
               </li>
               <li>
-                <Link to="/specialevents">Special Events</Link>
-              </li>
-              <li>
                 <Link to="/ministries">Ministries</Link>
               </li>
             </ul>
